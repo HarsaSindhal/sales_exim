@@ -1,0 +1,39 @@
+managed implementation in class zbp_sales1_item unique;
+strict ( 2 );
+
+define behavior for YSALES1_ITEM //alias <alias_name>
+persistent table ysales_item
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+  mapping for ysales_item
+   {
+   Invno = invno ;
+   Sno = sno ;
+   Material = material;
+
+    MaterialDesc = matedesc ;
+    Hsnno = hsnno;
+    Lotno = lotno;
+    Pkg = pkg;
+    Qty = qty;
+    Uom = uom;
+    Grosswt = grosswt;
+    Amtinr = amtinr;
+    Cgstper = cgstper;
+    Cgstamt = cgstamt;
+    Sgstper = sgstper;
+    Sgstamt = sgstamt;
+    Igstper = igstper;
+    Igstamt = igstamt;
+    Totalamt = totalamt;
+    basicAmt = basicAmt;
+    Amt_USD  = amt_usd;
+
+   }
+}

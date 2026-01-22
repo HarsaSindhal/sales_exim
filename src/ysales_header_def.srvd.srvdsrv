@@ -1,0 +1,6 @@
+@EndUserText.label: 'SERVICE DEF'
+define service YSALES_HEADER_DEF {
+  expose YSALES_HEADER_PROJ;
+  expose YSHIP_TO_PARTY;
+  expose ZAGENT_F4;
+}

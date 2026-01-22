@@ -1,0 +1,5 @@
+@EndUserText.label: 'SERVICE DEF'
+define service YSALES_ITEM_DEF {
+  expose YSALES_ITEM_PROJ;
+  expose YMATERIAL_F4;
+}

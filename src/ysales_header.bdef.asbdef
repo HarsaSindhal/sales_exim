@@ -1,0 +1,62 @@
+managed implementation in class zbp_sales_header unique;
+strict ( 2 );
+
+define behavior for YSALES_HEADER //alias <alias_name>
+persistent table ysales
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+mapping for ysales
+{
+
+Address1 = Address1;
+Address2 = Address2;
+Address3 = Address3;
+Address4 = Address4;
+Agent    = Agent;
+Billtoparty = Billtoparty;
+CompanyName = CompanyName;
+Contactno = Contactno;
+Contactpersonname = Contactpersonname;
+Country_Of_Destination   = Country_Of_Destination;
+Country_Of_Origin  = Country_Of_Origin;
+Customerpo = Customerpo;
+Deliveryno = Deliveryno;
+Driverno = driverno;
+ExpireDate = expiredate;
+Gstin = gstin;
+Invno = invno;
+InvoiceDate = invoicedate;
+LRNo = lrno;
+Cones_No = cones_no;
+Lrdate = lrdate;
+Noofcarton = noofcarton;
+Postal_Code =  postal_code;
+Regioncode = regioncode;
+Remark = remark;
+Salesdocdate = salesdocdate;
+ShipAddress1 = shipaddress1;
+ShipAddress2 = shipaddress2;
+ShipAddress3 = shipaddress3 ;
+ShipAddress4 = shipaddress4 ;
+Shipcompany = shipcompany;
+Shipstatecode = shipstatecode;
+Shiptoparty = shiptoparty;
+Statecode1 = statecode1;
+Transporter = transporter;
+Transportmode = transportmode;
+Vehicleno = vehicleno;
+
+
+
+
+
+
+
+}
+}
